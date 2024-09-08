@@ -1,6 +1,8 @@
 package com.example.demo.service;
 import org.springframework.http.RequestEntity;
+
 import org.springframework.http.ResponseEntity;
+
 import org.springframework.web.client.RestTemplate;
 public class Service {
     public String preverTempo(){
@@ -16,6 +18,7 @@ public class Service {
             dadosMeteorologicos= "Falha ao obter dados meteorologicos. Codigo de status: " + responseEntity.getStatusCode();
         }
         return dadosMeteorologicos;
+
     }
 }
 
